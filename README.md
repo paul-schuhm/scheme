@@ -49,7 +49,7 @@ L'expression `(+ 1 2)` est une liste. Une liste est délimitée par des parenth�
 
 >La syntaxe de Scheme est simple. Elle s'apprend en quelques minutes. La difficulté c'est que les parenthèses jouent plusieurs rôles (on dit que leur sémantique est surchargée) ce qui peut prêter à confusion au départ. 
 
-Lisp veut dire **lis**t **p**rocessing, car tout y est traitement de listes ! Le premier élément de la liste est appelé l'*opérateur*, (`+`). Le reste des éléments sont les *opérandes* (`1` et `2`). Les parenthèses  *l'application d'un opérateur à des éléments*, et indique à l'interpréteur d'évaluer cette application. La liste `(+ 1 2)` peut se traduire par *applique la procédure `+` aux éléments `1` et `2`*. L'expression `(+ 1 2)` est lue (*read*), l'interpréteur voit les parenthèses et applique donc `+` à `1` et `2` (*eval*) et affiche `3` (*print*). 
+Lisp veut dire **lis**t **p**rocessing, car tout y est traitement de listes ! Le premier élément de la liste est appelé l'*opérateur*, (`+`). Le reste des éléments sont les *opérandes* (`1` et `2`). Les parenthèses indique à l'interpréteur d'évaluer l'application de la procédure `+` au reste des éléments de la liste. La liste `(+ 1 2)` peut donc se traduire par *applique la procédure `+` aux éléments `1` et `2`*. L'expression `(+ 1 2)` est lue (*read*), l'interpréteur voit les parenthèses et applique donc `+` à `1` et `2` (*eval*) et affiche `3` (*print*). 
 
 > Si vous tapez `+ 1 2` sans parenthèses, Scheme va évaluer chaque expression séparemment. 
 
