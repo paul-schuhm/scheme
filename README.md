@@ -1,5 +1,18 @@
 # scheme
 
+Une brève introduction à [Scheme](https://fr.wikipedia.org/wiki/Scheme), un dialecte de [Lisp](https://fr.wikipedia.org/wiki/Lisp), crée dans les années 70 au MIT par [Gerald Jay Sussman](https://fr.wikipedia.org/wiki/Gerald_Jay_Sussman) et [Guy L. Steele](https://fr.wikipedia.org/wiki/Guy_Lewis_Steele,_Jr.) (impliqué dans la conception de Lisp, Scheme, Fortran 90, Java et dans l'implémentation d'Emacs et de TeX). 
+
+- [scheme](#scheme)
+  - [Installation](#installation)
+    - [Sur Debian/Ubuntu](#sur-debianubuntu)
+  - [Lancer l'interpréteur Scheme](#lancer-linterpréteur-scheme)
+  - [Premiers pas sur l'interpréteur](#premiers-pas-sur-linterpréteur)
+  - [Concepts fondamentaux](#concepts-fondamentaux)
+    - [Expressions primitives](#expressions-primitives)
+    - [Moyens de combinaison](#moyens-de-combinaison)
+  - [Références](#références)
+
+
 ## Installation
 
 ### Sur Debian/Ubuntu
@@ -41,9 +54,13 @@ Tout programme repose sur 3 ingrédients :
 - des *moyens de combinaison* pour combiner des éléments simples afin d'en fabriquer des plus complexes
 - des *moyens d'abstraction* pour nommer, penser et manipuler les combinaisons comme des modules ou boîtes noires
 
-Par exemple si vous tapez `42` dans l'interpréteur, le REP vous affiche `42`. En effet, `42` est évalué à `42`. Scheme vous met à disposition des procédures (ou fonctions) primitives comme l'addition (+), la soustraction (-), la multiplication (*) et la division (/)
+### Expressions primitives
+
+Par exemple, si vous tapez `42` dans l'interpréteur, le REP vous affiche `42`. En effet, `42` est évalué à `42`. Scheme vous met à disposition des procédures (ou fonctions) primitives comme l'addition (`+`), la soustraction (`-`), la multiplication (`*`) et la division (`/`).
 
 >Et bien d'autres, on y reviendra plus tard.
+
+### Moyens de combinaison
 
 L'expression `(+ 1 2)` est une liste. Une liste est délimitée par des parenthèses. 
 
@@ -52,8 +69,6 @@ L'expression `(+ 1 2)` est une liste. Une liste est délimitée par des parenth�
 Lisp veut dire **lis**t **p**rocessing, car tout y est traitement de listes ! Le premier élément de la liste est appelé l'*opérateur*, (`+`). Le reste des éléments sont les *opérandes* (`1` et `2`). Les parenthèses indique à l'interpréteur d'évaluer l'application de la procédure `+` au reste des éléments de la liste. La liste `(+ 1 2)` peut donc se traduire par *applique la procédure `+` aux éléments `1` et `2`*. L'expression `(+ 1 2)` est lue (*read*), l'interpréteur voit les parenthèses et applique donc `+` à `1` et `2` (*eval*) et affiche `3` (*print*). 
 
 > Si vous tapez `+ 1 2` sans parenthèses, Scheme va évaluer chaque expression séparemment. 
-
-
 
 ## Références
 
