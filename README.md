@@ -37,7 +37,7 @@ On remarque que le résultat affiché `;Value: 3` est écrit sous forme de comme
 
 Tout programme repose sur 3 ingrédients : 
 
-- des *expressions primitives* : fournies par le langage, ce sont les expressions les plus simples, comme la représentation du nombre `42` ou la chaîne de caractères `"foobar"`
+- des *expressions primitives* : fournies par le langage, ce sont les expressions les plus simples, comme la représentation du nombre `42`, la chaîne de caractères `"foobar"` ou la procédure d'addition (`+`)
 - des *moyens de combinaison* pour combiner des éléments simples afin d'en fabriquer des plus complexes
 - des *moyens d'abstraction* pour nommer, penser et manipuler les combinaisons comme des modules ou boîtes noires
 
