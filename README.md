@@ -72,7 +72,7 @@ Lisp veut dire **lis**t **p**rocessing, car tout y est traitement de listes ! Le
 
 ## Références
 
-- [Site officiel de Scheme (sur gnu.org)](https://www.gnu.org/software/mit-scheme/)
+- [Site officiel de MIT/GNU Scheme (sur gnu.org)](https://www.gnu.org/software/mit-scheme/), MIT/GNU Scheme est une implémentation du langage Scheme développée par Abelson et distribuée sous forme de logiciel libre (intégré au projet GNU)
 - [Documentation officielle de Scheme (une page)](https://www.gnu.org/software/mit-scheme/documentation/stable/mit-scheme-ref.html#Acknowledgements)
 - [Structure and interpretation of computer programs, 2nd edition (version HTML)](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html), l'édition web gratuite et complète du très grand livre d'Abelson, Gerald Jay et Julie Sussman (MIT Press, 1996). `Recommandé`
 - [Introduction aux fonctions en Scheme](https://www.shido.info/lisp/scheme4_e.html), un extrait d'un autre bon tutoriel sur le web sur Scheme
