@@ -25,6 +25,35 @@ L'interpréteur fonctionne toujours de la même manière: il lit l'expression qu
 
 Dans le REP tapez `(+ 1 2)` puis `entrée`. L'expression `(+ 1 2)` est lue par l'interpréteur (*read*), évaluée à 3 (*eval*) puis imprimée sur la sortie standard (*print*).
 
+~~~
+1 ]=> (+ 1 2)
+
+;Value: 3
+~~~
+
+On remarque que le résultat affiché `;Value: 3` est écrit sous forme de commentaire. Un commentaire en Scheme est défini par le caractère `;`.
+
+## Concepts fondamentaux
+
+Tout programme repose sur 3 ingrédients : 
+
+- des *expressions primitives* : fournies par le langage, ce sont les expressions les plus simples, comme la représentation du nombre `42` ou la chaîne de caractères `"foobar"`
+- des *moyens de combinaison* pour combiner des éléments simples afin d'en fabriquer des plus complexes
+- des *moyens d'abstraction* pour nommer, penser et manipuler les combinaisons comme des modules ou boîtes noires
+
+Par exemple si vous tapez `42` dans l'interpréteur, le REP vous affiche `42`. En effet, `42` est évalué à `42`. Scheme vous met à disposition des procédures (ou fonctions) primitives comme l'addition (+), la soustraction (-), la multiplication (*) et la division (/)
+
+>Et bien d'autres, on y reviendra plus tard.
+
+L'expression `(+ 1 2)` est une liste. Une liste est délimitée par des parenthèses. 
+
+>La syntaxe de Scheme est simple. Elle s'apprend en quelques minutes. La difficulté c'est que les parenthèses jouent plusieurs rôles (on dit que leur sémantique est surchargée) ce qui peut prêter à confusion au départ. 
+
+Lisp veut dire *__lis__t __p__rocessing*, car tout y est traitement de listes ! Le premier élément de la liste est appelée l'opérateur, `+` ici. Le reste des éléments sont les *opérandes*. La liste `(+ 1 2)` peut se traduire par "applique la procédure `+` aux éléments `1` et `2`". Les parenthèses se traduisent par *l'application d'un opérateur à des éléments*, et indique à l'interpréteur d'évaluer cette application. L'expression `(+ 1 2)` est lue (*read*), l'interpréteur voit les parenthèses et applique donc `+` à `1` et `2` (*eval*) et affiche `3`. 
+
+> Si vous tapez `+ 1 2` sans parenthèses, Scheme va évaluer chaque expression séparemment. 
+
+
 
 ## Références
 
